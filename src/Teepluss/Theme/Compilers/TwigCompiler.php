@@ -83,8 +83,6 @@ class TwigCompiler implements CompilerInterface {
      */
     public function getTwigCompiler($loader)
     {
-        sd($loader);
-
         $this->twig = new Twig_Environment($loader, array(
            'cache'       => storage_path().'/views',
            'autoescape'  => false,
